@@ -1,0 +1,279 @@
+:root {
+  --purple500: #281154;
+  --purple300: #270082;
+  --purple600: #1b0058;
+  --red600: #dc0000;
+  --body: #f9f6ff;
+  --max-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: SF Pro Text, sans-serif;
+  font-weight: 500;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+}
+
+section {
+  scroll-margin: 50px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h4 {
+  font-size: 1.5rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto; /* 0 auto*/
+}
+
+header {
+  background-color: var(--purple300);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  align-items: center;
+  padding: 20px 0;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 600;
+}
+
+button {
+  padding: 20px 35px;
+  border: 0;
+  transition: 0.2s ease-in-out;
+  cursor: pointer;
+  color: white;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+button:hover {
+  transition: 0.2s ease-in-out;
+  opacity: 0.8;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  border-bottom: solid 2px transparent;
+  transition: 0.2s ease-in;
+}
+
+nav ul li:hover {
+  border-bottom: solid 2px white;
+  transition: 0.2s ease-in;
+}
+
+.hero-section {
+  background-image: url(./img/hero-image.jpg);
+  height: 100vh;
+  display: grid;
+  color: white;
+  place-items: center;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hero-section p {
+  text-align: justify;
+  max-width: 80%;
+  margin: auto;
+  font-size: 1.2rem;
+}
+
+.hero-section h1 {
+  font-size: 96px;
+  font-family: bree serif, serif;
+}
+
+#available-on {
+  border-bottom: 2px solid #d4ffc0a6;
+}
+
+.hero-section h4 {
+  font-size: 25px;
+  letter-spacing: 0.5rem;
+}
+
+.music-section {
+  padding-top: 50px;
+  background-color: var(--purple500);
+}
+
+.music-section h2 {
+  font-size: 2.8rem;
+}
+
+.music-section .container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.primary-btn {
+  background-color: var(--red600);
+}
+
+.ipad-iphone-img {
+  position: relative;
+  top: 400px;
+  margin-top: -400px;
+}
+
+.ipad-iphone-img #ipad-img {
+  position: relative;
+  z-index: 1;
+}
+
+.ipad-iphone-img #iphone-img {
+  position: absolute;
+  top: 15%;
+  right: -10%;
+  z-index: 2;
+}
+
+.secondary-btn {
+  background-color: var(--purple300);
+  letter-spacing: 0.3rem;
+}
+
+.about-music {
+  padding-top: 500px;
+  display: grid;
+  place-items: center;
+  gap: 50px;
+  text-align: center;
+}
+
+.about-music.container h4 {
+  line-height: 32px;
+}
+.about-music.container p {
+  width: 75%;
+}
+.video-section {
+  background-image: linear-gradient(175deg, rgba(37, 8, 123, 0.743) 8.36%, rgba(15, 7, 39, 0.814) 95.78%), url(./img/video.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 800px;
+  min-width: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.video-section .container {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  gap: 30px;
+  margin-top: -200px;
+}
+
+/* background: linear-gradient(175deg, rgba(3, 0, 12, 0.67) 8.36%, rgba(34, 16, 89, 0.67) 95.78%);  */
+
+.video-section p {
+  margin-top: 20px;
+  font-weight: 400;
+  width: 85%;
+  line-height: 2;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.gift-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0;
+  gap: 50px;
+}
+
+.gift-section p {
+  margin: 20px 0;
+}
+
+.gift-section button {
+  margin-top: 25px;
+}
+
+.gift-section img {
+  width: 30vw;
+}
+
+.footer-upper .container {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+.footer-upper {
+  background-color: var(--purple600);
+  padding: 20px;
+}
+
+.footer-upper h4 {
+  padding-bottom: 5px;
+  border-bottom: 2px solid white;
+}
+
+.footer-upper li {
+  margin: 7px;
+}
+
+.footer-upper li:first-child {
+  margin-top: 20px;
+}
+
+.footer-lower {
+  background-color: var(--purple300);
+  color: white;
+  padding: 20px;
+  text-align: center;
+  letter-spacing: 0.15rem;
+  display: flex;
+  justify-content: center;
+}
