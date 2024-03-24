@@ -1,0 +1,41 @@
+#program {
+  background-color: yellow;
+  border-radius: 50px;
+  width: 750px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  top: 25%;
+  height: 50vh;
+}
+button {
+  font-size: 2.5rem;
+  border: 0;
+  border-radius: 7px;
+  color: hsl(0, 0%, 100%);
+  background-color: hsla(0, 17%, 5%, 0.758);
+  cursor: pointer;
+  transition: ease-in 0.3s;
+}
+
+button:hover {
+  transition: ease-out 0.1s;
+  font-size: 3.5rem;
+}
+
+#title {
+  font-size: 3.5rem;
+  position: relative;
+}
+
+#displayPassword {
+  font-family: monospace;
+  font-size: 2rem;
+  position: relative;
+  background-color: #fff;
+  border-radius: 25px;
+  width: 550px;
+  text-align: center;
+}
