@@ -1,0 +1,192 @@
+:root {
+  --lighting-color: #0089b8;
+  --dark-color: #003d62;
+  --darker-color: #003251;
+  --secondary-color: #fff700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* html {
+  font-size: 62.5%;
+} */
+
+body,
+html {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+body {
+  font-size: 1.4rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: var(--lighting-color);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+nav li {
+  font-size: 1.8rem;
+  border-bottom: 0.4rem solid transparent;
+  transition: 0.2s ease-in-out;
+}
+
+nav li:hover {
+  border-bottom: 0.4rem solid var(--secondary-color);
+  transition: 0.3s ease-in-out;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Hero-section */
+.hero-section {
+  background-color: var(--dark-color);
+  padding: 4rem 0;
+  border-bottom: var(--lighting-color) 4px solid;
+}
+
+.hero-section .container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.hero-section img {
+  border-radius: 900px 640px 150px 340px;
+  /* margin-left: 2rem; */
+  height: 38rem;
+  width: 28rem;
+  object-fit: cover;
+  transform: scaleX(-1);
+  filter: FlipH;
+}
+
+.hero-section .hero-content {
+  display: grid;
+  place-items: center;
+  font-family: bree serif;
+}
+
+.hero-section h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  border-bottom: var(--lighting-color) 4px solid;
+}
+
+.hi-text {
+  font-size: 4.7rem;
+  color: var(--secondary-color);
+  font-weight: bold;
+  font-family: monospace;
+}
+
+.name-text {
+  font-size: 3.8rem;
+}
+
+.hero-section h2 {
+  font-size: 3.2rem;
+  letter-spacing: 0.45rem;
+  font-weight: 900;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: 0.15em solid orange; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto auto 1.2rem; /* Gives that scrolling effect as the typing happens */ /* Adjust as needed */
+  animation: typing 5s steps(40, end), blink-caret 1.1s step-end infinite;
+}
+/* Animations */
+/* @keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--secondary-color);
+  }
+} */
+
+/* Project section */
+
+.project-section {
+  background-color: var(--darker-color);
+  padding: 1rem;
+}
+
+.project-section h2 {
+  margin: 2rem 0;
+  font-size: 6rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.project_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  padding: 1rem;
+  /* border: 3px solid white; */
+  gap: 5rem;
+}
+
+.grid-item {
+  display: grid;
+  place-items: center;
+}
+
+.card {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-section .card img {
+  width: 25rem;
+  height: 25rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  overflow: hidden;
+}
