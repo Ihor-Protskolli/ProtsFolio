@@ -11,9 +11,9 @@
   box-sizing: border-box;
 }
 
-/* html {
-  font-size: 62.5%;
-} */
+html {
+  font-size: 65%;
+}
 
 body,
 html {
@@ -89,7 +89,7 @@ nav li:hover {
 
 .hero-section img {
   border-radius: 900px 640px 150px 340px;
-  /* margin-left: 2rem; */
+  margin-left: 2rem;
   height: 38rem;
   width: 28rem;
   object-fit: cover;
@@ -154,25 +154,26 @@ nav li:hover {
 
 .project-section {
   background-color: var(--darker-color);
-  padding: 1rem;
+  padding: 0.1px;
 }
 
 .project-section h2 {
-  margin: 2rem 0;
   font-size: 6rem;
-  text-align: center;
+  font-weight: bold;
+  color: #fff;
   text-transform: uppercase;
+  font-family: bree serif, Roboto, sans-serif;
+  margin: 2rem 0;
+  text-align: center;
 }
 
 .project_container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  padding: 1rem;
-  /* border: 3px solid white; */
-  gap: 5rem;
+  gap: 2rem;
 }
 
-.grid-item {
+.grid_item {
   display: grid;
   place-items: center;
 }
@@ -181,12 +182,37 @@ nav li:hover {
   width: 320px;
   display: flex;
   flex-direction: column;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  transition: 0.3s ease-out;
 }
 
-.project-section .card img {
-  width: 25rem;
-  height: 25rem;
-  object-fit: cover;
-  border-radius: 0.8rem;
-  overflow: hidden;
+.card:hover {
+  transform: scale(1.05);
+  transition: 0.2s ease-in;
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  transition: 0.3s ease-in-out;
+  opacity: 0.8;
+}
+
+.card:hover .card_content {
+  background-color: #fff;
+  color: var(--dark-color);
+}
+
+.card_content {
+  padding: 2rem;
+  position: relative;
+  top: -6.5rem;
+  margin-bottom: -6.5rem;
+  transition: 0.5s ease-in-out;
+}
+
+.card_content h3 {
+  text-align: center;
+  font-family: bree serif, serif;
+  font-size: 2.3rem;
 }
